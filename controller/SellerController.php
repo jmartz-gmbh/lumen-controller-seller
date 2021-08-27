@@ -17,7 +17,7 @@ class SellerController extends Controller
 
         $sellers = $connection->get();
 
-        $this->addData('shops',$sellers);
+        $this->addData('sellers',$sellers);
         $this->addMessage('success','All your Sellers.');
 
         return $this->getResponse();
